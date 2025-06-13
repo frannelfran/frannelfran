@@ -13,7 +13,7 @@
 ###
 
 <div align="center">
-  <img height="400" src="./img/gengar.jpg"  />
+  <img height="400" src="./img/pixel-mario.gif"  />
 </div>
 
 ###
