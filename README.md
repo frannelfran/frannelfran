@@ -13,7 +13,7 @@
 ###
 
 <div align="center">
-  <img height="400" src="./img/pixel-mario.gif"  />
+  <img height="300" width="700" src="./img/pixel-mario.gif"  />
 </div>
 
 ###
