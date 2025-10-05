@@ -84,7 +84,7 @@
 ###
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app?username=frannelfran&theme=nord&column=4&row=2&margin-w=3&margin-h=8&no-bg=false&no-frame=true&order=4" height="250" alt="trophy graph"  />
+  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&column=4&row=2&margin-w=3&margin-h=8&no-bg=false&no-frame=true&order=4" height="250" alt="trophy graph" />
 </div>
 
 ###
