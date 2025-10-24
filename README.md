@@ -1,22 +1,10 @@
-<h1 align="left">Hey 👋 What's up?</h1>
+<h3 align="left">Hey 👋 What's up?</h3>
 
-###
+---
 
 <h3 align="center">Building innovative solutions with clean and efficient code</h3>
 
-###
-
-<div align="left">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=frannelfran.frannelfran&right_color=rebeccapurple"  />
-</div>
-
-###
-
-<div align="center">
-  <img height="400" src="./img/pixel-mario.gif"  />
-</div>
-
-###
+---
 
 <p align="left"> <a href="https://twitter.com/frannelfran" target="blank"><img src="https://img.shields.io/twitter/follow/frannelfran?logo=twitter&style=for-the-badge" alt="frannelfran" /></a> </p>
 
@@ -28,9 +16,9 @@
 
 - ⚡ Fun fact **I think I am Funny**
 
-<h2 align="left">Connect with me 📲</h2>
+<h3 align="left">Connect with me 📲</h3>
 
-###
+---
 
 <div align="left">
   <a href="https://x.com/Frannelfran" target="_blank">
@@ -41,11 +29,10 @@
   </a>
 </div>
 
-###
 
-<h2 align="left">Languages and Tools 👨🏻‍💻</h2>
+<h3 align="left">Languages and Tools 👨🏻‍💻</h3>
 
-###
+---
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
@@ -60,50 +47,37 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
        alt="python logo" width="40" height="40" />
   &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-       alt="bash logo" width="40" height="40" />
-  &ensp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
        alt="git logo" width="40" height="40" />
   &ensp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
        alt="github logo" width="40" height="40" />
   &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-       alt="mysql logo" width="40" height="40" />
-  &ensp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
        alt="unity logo" width="40" height="40" />
 </div>
 
 
-###
+<h3 align="left">Trophies 🏆</h3>
 
-<h2 align="left">Trophies 🏆</h2>
-
-###
+---
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&column=4&row=2&margin-w=3&margin-h=8&no-bg=false&no-frame=true&order=4" height="250" alt="trophy graph" />
 </div>
 
-###
 
-<h2 align="left">Stats 📈</h2>
+<h3 align="left">Stats 📈</h3>
 
-###
+---
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=frannelfran&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=nord&locale=en&hide_border=true&order=1" height="200" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=frannelfran&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=nord&hide_border=true&order=2" height="200" alt="languages graph"  />
 </div>
 
-###
+<h3 align="left">Snake 🐍</h3>
 
-<h2 align="left">Snake 🐍</h2>
-
-###
+---
 
 <img src="https://raw.githubusercontent.com/frannelfran/frannelfran/output/snake.svg" alt="Snake animation" />
-
-###
