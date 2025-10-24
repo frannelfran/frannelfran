@@ -67,9 +67,9 @@
 ---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&include_all_commits=true&count_private=true&theme=nord&hide_border=true" width="300" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&include_all_commits=true&count_private=true&theme=nord&hide_border=true" width="400" alt="GitHub Stats" />
   &ensp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=frannelfran&theme=nord&hide_border=true" width="300" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=frannelfran&theme=nord&hide_border=true" width="400" alt="GitHub Streak" />
 </div>
 
 
