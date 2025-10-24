@@ -4,6 +4,10 @@
 
 <h3 align="center">Building innovative solutions with clean and efficient code</h3>
 
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&margin-w=10&margin-h=10&no-bg=false&no-frame=true&row=1&column=8" alt="GitHub Trophies" />
+</div>
+
 ---
 
 <p align="left"> <a href="https://twitter.com/frannelfran" target="blank"><img src="https://img.shields.io/twitter/follow/frannelfran?logo=twitter&style=for-the-badge" alt="frannelfran" /></a> </p>
@@ -56,16 +60,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
        alt="unity logo" width="40" height="40" />
 </div>
-
-
-<h3 align="left">Trophies 🏆</h3>
-
----
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&column=4&row=2&margin-w=3&margin-h=8&no-bg=false&no-frame=true&order=4" height="250" alt="trophy graph" />
-</div>
-
 
 <h3 align="left">Stats 📈</h3>
 
