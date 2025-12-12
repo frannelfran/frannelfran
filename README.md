@@ -1,80 +1,75 @@
-<h3 align="left">Hey 👋 What's up?</h3>
-  <img src="https://komarev.com/ghpvc/?username=frannelfran&style=flat-square&color=blue" alt="Profile Views" />
-
----
-
-<h3 align="center">Building innovative solutions with clean and efficient code</h3>
+# ¡Hola, soy Franco! 👋
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&margin-w=10&margin-h=10&no-bg=false&no-frame=true&row=1&column=8" alt="GitHub Trophies" />
+
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=onedark&no-frame=true&no-bg=true&margin-w=4" alt="frannelfran's Trophies" />
+</a>
+
 </div>
 
----
+### 👨‍💻 Estudiante de Ingeniería Informática @ [ULL](https://www.ull.es/) 🇮🇨
 
-<p align="left"> <a href="https://twitter.com/frannelfran" target="blank"><img src="https://img.shields.io/twitter/follow/frannelfran?logo=twitter&style=for-the-badge" alt="frannelfran" /></a> </p>
-
-- 🔭 I’m currently working on **C++**
-
-- 🌱 I’m currently learning **C++ and Python**
-
-- 📫 How to reach me **frannelfran@gmail.com**
-
-- ⚡ Fun fact **I think I am Funny**
-
-<h3 align="left">Connect with me 📲</h3>
+Soy un apasionado por la tecnología en formación cursando el grado en la Universidad de La Laguna. Aunque disfruto del desarrollo general y los videojuegos, mi principal objetivo profesional es aplicar la **Inteligencia Artificial** para resolver problemas en el **ámbito de la Medicina**.
 
 ---
 
-<div align="left">
-  <a href="https://x.com/Frannelfran" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
-  </a>
-  <a href="https://www.instagram.com/frannalpes_/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-</div>
+### 🛠️ Tech Stack & Herramientas
 
+**Lenguajes Principales:**
+<p align="left">
+  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</p>
 
-<h3 align="left">Languages and Tools 👨🏻‍💻</h3>
+**Herramientas y Entorno:**
+<p align="left">
+  <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" />
+  <img src="https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</p>
+
+---
+
+### 🚀 Sobre mí
+
+- 🔭 **Interés principal:** Desarrollo de soluciones de IA aplicadas a la salud (HealthTech).
+- 🌱 **Aprendiendo:** Machine Learning, procesamiento de datos y algoritmos complejos.
+- 🎯 **Objetivo:** Participar en proyectos que unan la ingeniería de software con la investigación médica.
+- 👯 **Busco colaborar en:** Proyectos de investigación universitaria o Startups de biotecnología/salud.
+- ⚡ **Dato curioso:** Programo videojuegos en Unity en mis ratos libres.
 
 ---
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-       alt="typescript logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-       alt="javascript logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-       alt="cplusplus logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-       alt="python logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-       alt="git logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-       alt="github logo" width="40" height="40" />
-  &ensp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-       alt="unity logo" width="40" height="40" />
-</div>
+### 📫 Contacto & Redes
 
-<h3 align="left">Stats 📈</h3>
+¿Tienes un proyecto interesante o quieres hablar de tecnología? ¡Escríbeme!
+
+<p align="left">
+  <a href="mailto:TU_CORREO@GMAIL.COM"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://twitter.com/TU_USUARIO_TWITTER"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" /></a>
+  <a href="https://instagram.com/TU_USUARIO_INSTAGRAM"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" /></a>
+</p>
 
 ---
+
+### 📊 Mis Estadísticas en GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&include_all_commits=true&count_private=true&theme=nord&hide_border=true" width="400" alt="GitHub Stats" />
-  &ensp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=frannelfran&theme=nord&hide_border=true" width="400" alt="GitHub Streak" />
+
+<a href="https://github.com/frannelfran">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+</a>
+
+<a href="https://github.com/frannelfran">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=tokyonight"/>
+</a>
+
 </div>
 
-
-<h3 align="left">Snake 🐍</h3>
-
 ---
-
-<img src="https://raw.githubusercontent.com/frannelfran/frannelfran/output/snake.svg" alt="Snake animation" />
+<p align="center">
+  <i>¡Gracias por visitar mi perfil!</i>
+</p>
