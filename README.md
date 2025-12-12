@@ -48,9 +48,9 @@ Soy un apasionado por la tecnología en formación cursando el grado en la Unive
 ¿Tienes un proyecto interesante o quieres hablar de tecnología? ¡Escríbeme!
 
 <p align="left">
-  <a href="mailto:TU_CORREO@GMAIL.COM"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://twitter.com/TU_USUARIO_TWITTER"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" /></a>
-  <a href="https://instagram.com/TU_USUARIO_INSTAGRAM"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="mailto:frannelfran@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://twitter.com/Frannelfran"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" /></a>
+  <a href="https://instagram.com/frannalpes_"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" /></a>
 </p>
 
 ---
