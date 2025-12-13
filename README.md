@@ -1,13 +1,5 @@
 # ¡Hola, soy Franco! 👋
 
-<div align="center">
-
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=onedark&no-frame=true&no-bg=true&margin-w=4" alt="frannelfran's Trophies" />
-</a>
-
-</div>
-
 ### 👨‍💻 Estudiante de Ingeniería Informática @ [ULL](https://www.ull.es/) 🇮🇨
 
 Soy un apasionado por la tecnología en formación cursando el grado en la Universidad de La Laguna. Aunque disfruto del desarrollo general y los videojuegos, mi principal objetivo profesional es aplicar la **Inteligencia Artificial** para resolver problemas en el **ámbito de la Medicina**.
