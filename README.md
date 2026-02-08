@@ -31,7 +31,7 @@ Soy un apasionado por la tecnología en formación cursando el grado en la Unive
 - 🌱 **Aprendiendo:** Machine Learning, procesamiento de datos y algoritmos complejos.
 - 🎯 **Objetivo:** Participar en proyectos que unan la ingeniería de software con la investigación médica.
 - 👯 **Busco colaborar en:** Proyectos de investigación universitaria o Startups de biotecnología/salud.
-- ⚡ **Dato curioso:** Programo videojuegos en Unity en mis ratos libres.
+- ⚡ **Dato curioso:** Programo redes neuronales con *Keras* en mis ratos libres.
 
 ---
 
