@@ -2,7 +2,7 @@
 
 ### 👨‍💻 Estudiante de Ingeniería Informática @ [ULL](https://www.ull.es/) 🇮🇨
 
-Soy un apasionado por la tecnología en formación cursando el grado en la Universidad de La Laguna. Aunque disfruto del desarrollo general y los videojuegos, mi principal objetivo profesional es aplicar la **Inteligencia Artificial** para resolver problemas en el **ámbito de la Medicina**.
+Soy un apasionado por la tecnología en formación cursando el grado en la Universidad de La Laguna. Aunque disfruto del desarrollo general, mi principal **objetivo profesional** es aplicar la **Inteligencia Artificial** para resolver problemas en el **ámbito de la Medicina**.
 
 ---
 
