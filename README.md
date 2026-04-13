@@ -86,12 +86,12 @@
 
 ![Quickdraw](https://img.shields.io/badge/🏅%20Quickdraw-Logro%20oficial%20de%20GitHub-ff6b9d?style=for-the-badge&logoColor=white&labelColor=161b22)
 ![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/frannelfran&query=$.public_repos&style=for-the-badge&color=c9b8ff&labelColor=161b22&label=Repositorios%20públicos&logo=github&logoColor=white)
-![Contribuciones](https://img.shields.io/badge/2.133-Contribuciones%20totales-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![Contribuciones](https://img.shields.io/badge/Contribuciones%20totales-2133-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 
 **Actividad**
 
 ![Desde](https://img.shields.io/badge/Activo%20desde-Septiembre%202022-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![Streak](https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=161b22&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff&mode=weekly)
+![Racha](https://img.shields.io/badge/Racha%20máxima-20%20días%20consecutivos-c9b8ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 ![Seguidores](https://img.shields.io/github/followers/frannelfran?style=for-the-badge&color=ffd700&labelColor=161b22&label=Seguidores&logo=github&logoColor=white)
 
 **Comunidad**
