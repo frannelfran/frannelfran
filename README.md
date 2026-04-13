@@ -8,7 +8,7 @@ Soy un apasionado por la tecnología en formación cursando el grado en la Unive
 ### 🏆 Trofeos
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trofeos de GitHub" />
+  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="Trofeos de GitHub" />
 </p>
 
 ---
@@ -57,8 +57,9 @@ Soy un apasionado por la tecnología en formación cursando el grado en la Unive
 ### 📊 Mis Estadísticas en GitHub
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&cache_seconds=86400&hide_border=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=tokyonight&cache_seconds=86400&hide_border=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=1a1b27" />
+  &nbsp;
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27" />
 </div>
 
 ---
