@@ -1,43 +1,94 @@
-name: Update Contributions & Streak
+name: Update README Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Update streak stats
-        uses: DenverCoder1/readme-streak-stats@main
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Update contribution count
-        uses: actions/github-script@v6
+      - name: Fetch GitHub stats
+        id: stats
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
-            const query = `query {
-              user(login: "frannelfran") {
-                contributionsCollection {
-                  contributionCalendar {
-                    totalContributions
+            const { data: user } = await github.rest.users.getByUsername({
+              username: 'frannelfran'
+            });
+
+            const query = `
+              query {
+                user(login: "frannelfran") {
+                  contributionsCollection {
+                    contributionCalendar {
+                      totalContributions
+                    }
+                  }
+                  streakStats: contributionsCollection {
+                    startedAt
                   }
                 }
               }
-            }`;
-            const result = await github.graphql(query);
-            const total = result.user.contributionsCollection.contributionCalendar.totalContributions;
-            console.log(`Total contributions: ${total}`);
+            `;
 
-      - name: Commit changes
+            const result = await github.graphql(`
+              query {
+                user(login: "frannelfran") {
+                  contributionsCollection {
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          contributionCount
+                          date
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `);
+
+            const calendar = result.user.contributionsCollection.contributionCalendar;
+            const total = calendar.totalContributions;
+
+            const days = calendar.weeks.flatMap(w => w.contributionDays);
+            let maxStreak = 0;
+            let currentStreak = 0;
+            for (const day of days) {
+              if (day.contributionCount > 0) {
+                currentStreak++;
+                maxStreak = Math.max(maxStreak, currentStreak);
+              } else {
+                currentStreak = 0;
+              }
+            }
+
+            core.setOutput('total', total);
+            core.setOutput('streak', maxStreak);
+            console.log(`Total: ${total}, Max streak: ${maxStreak}`);
+
+      - name: Update README
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
+          TOTAL="${{ steps.stats.outputs.total }}"
+          STREAK="${{ steps.stats.outputs.streak }}"
+
+          sed -i "s|Contribuciones%20totales-[^-]*-ffd700|Contribuciones%20totales-${TOTAL}-ffd700|g" README.md
+          sed -i "s|días%20consecutivos-[^-]*-c9b8ff|días%20consecutivos-${STREAK}-c9b8ff|g" README.md
+
+      - name: Commit and push
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git add README.md
-          git diff --staged --quiet || git commit -m "chore: update stats"
+          git diff --staged --quiet || git commit -m "chore: update contributions and streak stats"
           git push
