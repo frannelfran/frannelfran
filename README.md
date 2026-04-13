@@ -95,17 +95,27 @@
 
 ---
 
+---
+
 ### 📊 Estadísticas
 
 <div align="center">
 
-<img width="98%" src="https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=0d1117&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"/>
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/stats-header.svg"/>
 
 </div>
 
 <div align="center">
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9b8ff&line=ff6b9d&point=ffd700&area=true&area_color=ff6b9d20"/>
+<img width="38%" src="https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=0d1117&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"/>
+&nbsp;
+<img width="58%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=donut-vertical&theme=radical&hide_border=true&bg_color=0d1117&title_color=ff6b9d&text_color=8b949e&langs_count=6"/>
+
+</div>
+
+<div align="center">
+
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9b8ff&line=ff6b9d&point=ffd700&area=true&area_color=ff6b9d20&custom_title=Actividad+de+Contribuciones"/>
 
 </div>
 
