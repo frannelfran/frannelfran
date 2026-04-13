@@ -1,0 +1,38 @@
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="200" fill="#161b22" rx="12" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="0" y="0" width="860" height="3" rx="12" fill="#ff6b9d" opacity="0.8"/>
+
+  <!-- Título -->
+  <text x="30" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#ff6b9d">Lenguajes más usados</text>
+
+  <!-- C++ -->
+  <circle cx="52" cy="75" r="7" fill="#00599C"/>
+  <text x="66" y="80" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#e6edf3">C++</text>
+  <rect x="120" y="68" width="580" height="14" rx="7" fill="#21262d"/>
+  <rect x="120" y="68" width="348" height="14" rx="7" fill="#00599C" opacity="0.85"/>
+  <text x="714" y="80" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">60%</text>
+
+  <!-- Python -->
+  <circle cx="52" cy="110" r="7" fill="#3670A0"/>
+  <text x="66" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#e6edf3">Python</text>
+  <rect x="120" y="103" width="580" height="14" rx="7" fill="#21262d"/>
+  <rect x="120" y="103" width="203" height="14" rx="7" fill="#3670A0" opacity="0.85"/>
+  <text x="714" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">35%</text>
+
+  <!-- Java -->
+  <circle cx="52" cy="145" r="7" fill="#ED8B00"/>
+  <text x="66" y="150" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#e6edf3">Java</text>
+  <rect x="120" y="138" width="580" height="14" rx="7" fill="#21262d"/>
+  <rect x="120" y="138" width="87" height="14" rx="7" fill="#ED8B00" opacity="0.85"/>
+  <text x="714" y="150" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">15%</text>
+
+  <!-- TypeScript -->
+  <circle cx="52" cy="180" r="7" fill="#007ACC"/>
+  <text x="66" y="185" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#e6edf3">TypeScript</text>
+  <rect x="120" y="173" width="580" height="14" rx="7" fill="#21262d"/>
+  <rect x="120" y="173" width="58" height="14" rx="7" fill="#007ACC" opacity="0.85"/>
+  <text x="714" y="185" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">10%</text>
+
+  <!-- Nota -->
+  <text x="752" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="end">basado en repos públicos</text>
+</svg>
