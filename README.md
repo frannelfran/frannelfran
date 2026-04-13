@@ -95,27 +95,13 @@
 
 ---
 
-### 📊 Estadísticas
-
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/stats-header.svg"/>
-</div>
-
-<div align="center">
-<img width="98%" src="https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=161b22&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"/>
-</div>
-
-<div align="center">
-<img width="98%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/top-langs.svg"/>
-</div>
-
-<div align="center">
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&theme=tokyo-night&hide_border=true&bg_color=161b22&color=c9b8ff&line=ff6b9d&point=ffd700&area=true&area_color=ff6b9d20&custom_title=Actividad+de+Contribuciones"/>
-</div>
-
----
-
 ### 📫 Contacto
+
+<div align="center">
+
+[![Contacto](https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/contact.svg)](https://github.com/frannelfran)
+
+</div>
 
 <div align="center">
 
