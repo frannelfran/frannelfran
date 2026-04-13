@@ -95,8 +95,6 @@
 
 ---
 
-### 📊 Estadísticas
-
 <div align="center">
 
 <img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/stats-header.svg"/>
