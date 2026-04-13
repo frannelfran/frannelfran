@@ -19,7 +19,7 @@ jobs:
         id: stats
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.UPDATEREADME }}
+          github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const result = await github.graphql(`
               query {
@@ -55,17 +55,15 @@ jobs:
 
             core.setOutput('total', total);
             core.setOutput('streak', maxStreak);
+            console.log(`Total: ${total}, Max streak: ${maxStreak}`);
 
-      - name: Update SVG
+      - name: Update logros.svg
         run: |
           TOTAL="${{ steps.stats.outputs.total }}"
           STREAK="${{ steps.stats.outputs.streak }}"
 
           sed -i "s|<!-- CONTRIBUTIONS -->|${TOTAL}|g" assets/logros.svg
-          sed -i "s|<!-- STREAK -->|${STREAK}|g" assets/logros.svg
-
-          sed -i "s|>[0-9]*</text>\(.*Desde septiembre\)|>${TOTAL}</text>\1|g" assets/logros.svg
-          sed -i "s|>[0-9]* días</text>\(.*consecutivos\)|>${STREAK} días</text>\1|g" assets/logros.svg
+          sed -i "s|<!-- STREAK --> días|${STREAK} días|g" assets/logros.svg
 
       - name: Commit and push
         run: |
