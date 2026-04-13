@@ -63,21 +63,6 @@
 ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
 
-### 📌 Proyectos Destacados
-
----
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/projects-card.svg"/>
-
-[![Redes-Neuronales-en-Keras](https://img.shields.io/badge/→%20Redes%20Neuronales%20en%20Keras-ff6b9d?style=flat-square&logo=keras&logoColor=white)](https://github.com/frannelfran/Redes-Neuronales-en-Keras)
-[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=cplusplus&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
-[![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/APv)
-[![VRPT-SWTS](https://img.shields.io/badge/→%20VRPT--SWTS-00e5ff?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/VRPT-SWTS)
-
-</div>
-
 ### 🏆 Logros
 
 ---

@@ -1,4 +1,4 @@
-name: Update README Stats
+name: Update Stats SVG
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  update-svg:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,25 +21,6 @@ jobs:
         with:
           github-token: ${{ secrets.UPDATEREADME }}
           script: |
-            const { data: user } = await github.rest.users.getByUsername({
-              username: 'frannelfran'
-            });
-
-            const query = `
-              query {
-                user(login: "frannelfran") {
-                  contributionsCollection {
-                    contributionCalendar {
-                      totalContributions
-                    }
-                  }
-                  streakStats: contributionsCollection {
-                    startedAt
-                  }
-                }
-              }
-            `;
-
             const result = await github.graphql(`
               query {
                 user(login: "frannelfran") {
@@ -49,7 +30,6 @@ jobs:
                       weeks {
                         contributionDays {
                           contributionCount
-                          date
                         }
                       }
                     }
@@ -63,32 +43,34 @@ jobs:
 
             const days = calendar.weeks.flatMap(w => w.contributionDays);
             let maxStreak = 0;
-            let currentStreak = 0;
+            let current = 0;
             for (const day of days) {
               if (day.contributionCount > 0) {
-                currentStreak++;
-                maxStreak = Math.max(maxStreak, currentStreak);
+                current++;
+                maxStreak = Math.max(maxStreak, current);
               } else {
-                currentStreak = 0;
+                current = 0;
               }
             }
 
             core.setOutput('total', total);
             core.setOutput('streak', maxStreak);
-            console.log(`Total: ${total}, Max streak: ${maxStreak}`);
 
-      - name: Update README
+      - name: Update SVG
         run: |
           TOTAL="${{ steps.stats.outputs.total }}"
           STREAK="${{ steps.stats.outputs.streak }}"
 
-          sed -i "s|Contribuciones%20totales-[^-]*-ffd700|Contribuciones%20totales-${TOTAL}-ffd700|g" README.md
-          sed -i "s|días%20consecutivos-[^-]*-c9b8ff|días%20consecutivos-${STREAK}-c9b8ff|g" README.md
+          sed -i "s|<!-- CONTRIBUTIONS -->|${TOTAL}|g" assets/logros.svg
+          sed -i "s|<!-- STREAK -->|${STREAK}|g" assets/logros.svg
+
+          sed -i "s|>[0-9]*</text>\(.*Desde septiembre\)|>${TOTAL}</text>\1|g" assets/logros.svg
+          sed -i "s|>[0-9]* días</text>\(.*consecutivos\)|>${STREAK} días</text>\1|g" assets/logros.svg
 
       - name: Commit and push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add README.md
-          git diff --staged --quiet || git commit -m "chore: update contributions and streak stats"
+          git add assets/logros.svg
+          git diff --staged --quiet || git commit -m "chore: update stats in logros.svg"
           git push
