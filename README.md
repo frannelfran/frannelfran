@@ -11,7 +11,13 @@
 
 </div>
 
----
+<br/>
+
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/about-header.svg"/>
+</div>
+
+<br/>
 
 <img align="right" width="260" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
@@ -33,16 +39,33 @@
 
 <br clear="right"/>
 
----
+<br/>
 
 <div align="center">
 <img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/tech-header.svg"/>
 </div>
 
+<br/>
+
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/achievements-header.svg"/>
+</div>
+
+<br/>
+
 <div align="center">
 
-[![Proyectos](https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/projects-card.svg)](https://github.com/frannelfran)
+![MultiLanguage](https://img.shields.io/badge/Multi--Language-C++%20·%20Python%20·%20Java%20·%20TS-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![AI Dev](https://img.shields.io/badge/IA%20Developer-TensorFlow%20·%20Keras-c9b8ff?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=161b22)
+![Student](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![HealthTech](https://img.shields.io/badge/Predictive%20IA-Modelos%20de%20Enfermedad-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 
+</div>
+
+<br/>
+
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/projects-card.svg"/>
 </div>
 
 <div align="center">
@@ -54,12 +77,10 @@
 
 </div>
 
----
+<br/>
 
 <div align="center">
-
-[![Contacto](https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/contact.svg)](https://github.com/frannelfran)
-
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/contact.svg"/>
 </div>
 
 <div align="center">
@@ -70,7 +91,7 @@
 
 </div>
 
----
+<br/>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer&animation=fadeIn"/>
 
