@@ -91,7 +91,7 @@
 **Actividad**
 
 ![Desde](https://img.shields.io/badge/Activo%20desde-Septiembre%202022-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![Racha](https://img.shields.io/badge/Racha%20máxima-20%20días%20consecutivos-c9b8ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![Streak](https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=161b22&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff&mode=weekly)
 ![Seguidores](https://img.shields.io/github/followers/frannelfran?style=for-the-badge&color=ffd700&labelColor=161b22&label=Seguidores&logo=github&logoColor=white)
 
 **Comunidad**

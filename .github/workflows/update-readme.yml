@@ -1,0 +1,43 @@
+name: Update Contributions & Streak
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update streak stats
+        uses: DenverCoder1/readme-streak-stats@main
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Update contribution count
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const query = `query {
+              user(login: "frannelfran") {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                  }
+                }
+              }
+            }`;
+            const result = await github.graphql(query);
+            const total = result.user.contributionsCollection.contributionCalendar.totalContributions;
+            console.log(`Total contributions: ${total}`);
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update stats"
+          git push
