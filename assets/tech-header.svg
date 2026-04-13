@@ -1,28 +1,95 @@
-<svg width="860" height="80" viewBox="0 0 860 80" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="80" fill="#161b22" rx="12"/>
+<svg width="860" height="320" viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="320" fill="#161b22" rx="12"/>
   <rect x="0" y="0" width="860" height="3" rx="12" fill="#c9b8ff" opacity="0.8"/>
 
-  <!-- Icono -->
-  <circle cx="44" cy="42" r="18" fill="#c9b8ff" fill-opacity="0.12" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="44" y="48" text-anchor="middle" font-size="14">🛠️</text>
+  <!-- HEADER -->
+  <circle cx="44" cy="44" r="20" fill="#c9b8ff" fill-opacity="0.12" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="44" y="50" text-anchor="middle" font-size="15">🛠️</text>
+  <text x="74" y="38" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Arsenal Tecnológico</text>
+  <text x="74" y="56" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">Lenguajes · IA &amp; Data Science · Herramientas</text>
 
-  <!-- Título -->
-  <text x="72" y="36" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Arsenal Tecnológico</text>
-  <text x="72" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#8b949e">Lenguajes · IA &amp; Data Science · Herramientas</text>
+  <line x1="16" y1="74" x2="844" y2="74" stroke="#30363d" stroke-width="0.8"/>
 
-  <!-- Tags decorativos -->
-  <rect x="582" y="24" width="34" height="22" rx="11" fill="#00599C" fill-opacity="0.15" stroke="#00599C" stroke-width="0.8" stroke-opacity="0.5"/>
-  <text x="599" y="39" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#60a5fa">C++</text>
+  <!-- ===== CATEGORÍA 1: LENGUAJES ===== -->
+  <text x="20" y="96" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#c9b8ff" letter-spacing="1">LENGUAJES</text>
 
-  <rect x="624" y="24" width="50" height="22" rx="11" fill="#3670A0" fill-opacity="0.15" stroke="#3670A0" stroke-width="0.8" stroke-opacity="0.5"/>
-  <text x="649" y="39" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#7bb3d9">Python</text>
+  <!-- C++ -->
+  <rect x="20" y="104" width="92" height="32" rx="8" fill="#00599C" fill-opacity="0.18" stroke="#00599C" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="34" y="116" font-size="11">⚙</text>
+  <text x="50" y="125" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#60a5fa">C++</text>
 
-  <rect x="682" y="24" width="54" height="22" rx="11" fill="#FF6F00" fill-opacity="0.13" stroke="#FF6F00" stroke-width="0.8" stroke-opacity="0.5"/>
-  <text x="709" y="39" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#f97316">TensorFlow</text>
+  <!-- Python -->
+  <rect x="120" y="104" width="100" height="32" rx="8" fill="#3670A0" fill-opacity="0.18" stroke="#3670A0" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="134" y="116" font-size="11">🐍</text>
+  <text x="152" y="125" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#7bb3d9">Python</text>
 
-  <rect x="744" y="24" width="42" height="22" rx="11" fill="#D00000" fill-opacity="0.13" stroke="#D00000" stroke-width="0.8" stroke-opacity="0.5"/>
-  <text x="765" y="39" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#f87171">Keras</text>
+  <!-- Java -->
+  <rect x="228" y="104" width="86" height="32" rx="8" fill="#ED8B00" fill-opacity="0.15" stroke="#ED8B00" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="242" y="116" font-size="11">☕</text>
+  <text x="260" y="125" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#f59e0b">Java</text>
 
-  <rect x="794" y="24" width="56" height="22" rx="11" fill="#007ACC" fill-opacity="0.13" stroke="#007ACC" stroke-width="0.8" stroke-opacity="0.5"/>
-  <text x="822" y="39" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">TypeScript</text>
+  <!-- TypeScript -->
+  <rect x="322" y="104" width="118" height="32" rx="8" fill="#007ACC" fill-opacity="0.18" stroke="#007ACC" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="336" y="116" font-size="11">📘</text>
+  <text x="354" y="125" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#38bdf8">TypeScript</text>
+
+  <!-- ===== CATEGORÍA 2: IA & DATA SCIENCE ===== -->
+  <text x="20" y="162" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#ff6b9d" letter-spacing="1">IA &amp; DATA SCIENCE</text>
+
+  <!-- TensorFlow -->
+  <rect x="20" y="170" width="126" height="32" rx="8" fill="#FF6F00" fill-opacity="0.15" stroke="#FF6F00" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="34" y="182" font-size="11">🔶</text>
+  <text x="52" y="191" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#f97316">TensorFlow</text>
+
+  <!-- Keras -->
+  <rect x="154" y="170" width="86" height="32" rx="8" fill="#D00000" fill-opacity="0.15" stroke="#D00000" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="168" y="182" font-size="11">🔴</text>
+  <text x="186" y="191" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#f87171">Keras</text>
+
+  <!-- scikit-learn -->
+  <rect x="248" y="170" width="114" height="32" rx="8" fill="#F7931E" fill-opacity="0.15" stroke="#F7931E" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="262" y="182" font-size="11">🤖</text>
+  <text x="280" y="191" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#fb923c">scikit-learn</text>
+
+  <!-- NumPy -->
+  <rect x="370" y="170" width="90" height="32" rx="8" fill="#013243" fill-opacity="0.6" stroke="#4dabcf" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="384" y="182" font-size="11">🔢</text>
+  <text x="402" y="191" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#4dabcf">NumPy</text>
+
+  <!-- Pandas -->
+  <rect x="468" y="170" width="94" height="32" rx="8" fill="#150458" fill-opacity="0.7" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="482" y="182" font-size="11">🐼</text>
+  <text x="500" y="191" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#a78bfa">Pandas</text>
+
+  <!-- ===== CATEGORÍA 3: ENTORNO & HERRAMIENTAS ===== -->
+  <text x="20" y="228" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="700" fill="#ffd700" letter-spacing="1">ENTORNO &amp; HERRAMIENTAS</text>
+
+  <!-- VS Code -->
+  <rect x="20" y="236" width="100" height="32" rx="8" fill="#0078d7" fill-opacity="0.18" stroke="#0078d7" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="34" y="248" font-size="11">💻</text>
+  <text x="52" y="257" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#60a5fa">VS Code</text>
+
+  <!-- Jupyter -->
+  <rect x="128" y="236" width="98" height="32" rx="8" fill="#FA0F00" fill-opacity="0.15" stroke="#FA0F00" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="142" y="248" font-size="11">📓</text>
+  <text x="160" y="257" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#f87171">Jupyter</text>
+
+  <!-- Git -->
+  <rect x="234" y="236" width="76" height="32" rx="8" fill="#F05032" fill-opacity="0.18" stroke="#F05032" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="248" y="248" font-size="11">🌿</text>
+  <text x="266" y="257" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#f97316">Git</text>
+
+  <!-- GitHub -->
+  <rect x="318" y="236" width="96" height="32" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#8b949e" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="332" y="248" font-size="11">🐙</text>
+  <text x="350" y="257" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#e6edf3">GitHub</text>
+
+  <!-- Unity -->
+  <rect x="422" y="236" width="86" height="32" rx="8" fill="#ffffff" fill-opacity="0.05" stroke="#6b7280" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="436" y="248" font-size="11">🎮</text>
+  <text x="454" y="257" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#9ca3af">Unity</text>
+
+  <!-- Footer decorativo -->
+  <line x1="16" y1="286" x2="844" y2="286" stroke="#30363d" stroke-width="0.8"/>
+  <text x="430" y="305" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#30363d">· · · · · · · · · · · · · · · · · · · ·</text>
 </svg>
