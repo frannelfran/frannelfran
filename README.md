@@ -1,8 +1,15 @@
 # ¡Hola, soy Franco! 👋
-
 ### 👨‍💻 Estudiante de Ingeniería Informática @ [ULL](https://www.ull.es/) 🇮🇨
 
 Soy un apasionado por la tecnología en formación cursando el grado en la Universidad de La Laguna. Aunque disfruto del desarrollo general, mi principal **objetivo profesional** es aplicar la **Inteligencia Artificial** para resolver problemas en el **ámbito de la Medicina**.
+
+---
+
+### 🏆 Trofeos
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trofeos de GitHub" />
+</p>
 
 ---
 
@@ -50,18 +57,12 @@ Soy un apasionado por la tecnología en formación cursando el grado en la Unive
 ### 📊 Mis Estadísticas en GitHub
 
 <div align="center">
-
-<a href="https://github.com/frannelfran">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-</a>
-
-<a href="https://github.com/frannelfran">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=tokyonight"/>
-</a>
-
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&cache_seconds=86400&hide_border=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=tokyonight&cache_seconds=86400&hide_border=true" />
 </div>
 
 ---
+
 <p align="center">
   <i>¡Gracias por visitar mi perfil!</i>
 </p>
