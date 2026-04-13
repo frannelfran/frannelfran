@@ -18,21 +18,21 @@
 
 <img align="right" width="260" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
-🎓 &nbsp;Estudiante de **Ingeniería Informática** en la Universidad de La Laguna 🇮🇨
+🎓 &nbsp;Estudiante de ***Ingeniería Informática*** en la Universidad de La Laguna 🇮🇨
 
-📈 &nbsp;Mi misión: entrenar modelos capaces de **predecir enfermedades** antes de que el paciente lo sepa
+📈 &nbsp;Mi misión: entrenar modelos capaces de **predecir enfermedades** *antes de que el paciente lo sepa*
 
-⚡ &nbsp;Programo principalmente en **C++** — velocidad para cuando los datos no esperan
+⚡ &nbsp;Programo principalmente en ***C++*** — velocidad para cuando los datos no esperan
 
-🧠 &nbsp;Explorando **Deep Learning**, **Computer Vision** y estadística médica aplicada
+🧠 &nbsp;Explorando **Deep Learning**, *Computer Vision* y estadística médica aplicada
 
-🤝 &nbsp;Busco unirme a proyectos de **investigación universitaria**, HealthTech o Biotech
+🤝 &nbsp;Busco unirme a proyectos de ***investigación universitaria***, HealthTech o Biotech
 
-🎮 &nbsp;Fuera del código: videojuegos, electrónica y entender cómo funciona el cuerpo humano
+🎮 &nbsp;Fuera del código: videojuegos, electrónica y *entender cómo funciona el cuerpo humano*
 
 <br/>
 
-> *"El mejor modelo no es el más complejo — es el que llega al paciente a tiempo."*
+> ***"El mejor modelo no es el más complejo — es el que llega al paciente a tiempo."***
 
 <br clear="right"/>
 
@@ -82,20 +82,29 @@
 
 ---
 
-<div align="center">
+**GitHub**
 
-![MultiLanguage](https://img.shields.io/badge/Multi--Language-C++%20·%20Python%20·%20Java%20·%20TS-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![AI Dev](https://img.shields.io/badge/IA%20Developer-TensorFlow%20·%20Keras-c9b8ff?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=161b22)
-![Student](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![HealthTech](https://img.shields.io/badge/Predictive%20IA-Modelos%20de%20Enfermedad-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![Quickdraw](https://img.shields.io/badge/🏅%20Quickdraw-Logro%20oficial%20de%20GitHub-ff6b9d?style=for-the-badge&logoColor=white&labelColor=161b22)
+![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/frannelfran&query=$.public_repos&style=for-the-badge&color=c9b8ff&labelColor=161b22&label=Repositorios%20públicos&logo=github&logoColor=white)
+![Contribuciones](https://img.shields.io/badge/2.133-Contribuciones%20totales-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 
-</div>
+**Actividad**
+
+![Desde](https://img.shields.io/badge/Activo%20desde-Septiembre%202022-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![Racha](https://img.shields.io/badge/Racha%20máxima-20%20días%20consecutivos-c9b8ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![Seguidores](https://img.shields.io/github/followers/frannelfran?style=for-the-badge&color=ffd700&labelColor=161b22&label=Seguidores&logo=github&logoColor=white)
+
+**Comunidad**
+
+![Stars](https://img.shields.io/github/stars/frannelfran?style=for-the-badge&color=ff6b9d&labelColor=161b22&label=Estrellas&logo=github&logoColor=white)
+![Lenguaje](https://img.shields.io/badge/C++-Lenguaje%20principal-00e5ff?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=161b22)
+![ULL](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 
 ### 📫 Contacto
 
 ---
 
-¿Tienes un proyecto interesante o quieres hablar de tecnología? ¡Escríbeme!
+*¿Tienes un proyecto interesante o quieres hablar de tecnología? ¡Escríbeme!*
 
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:frannelfran@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Frannelfran)
@@ -104,5 +113,5 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer&animation=fadeIn"/>
 
 <div align="center">
-  <sub>⚡ <i>Compilando modelos que predicen enfermedades antes de que aparezcan.</i> ⚡</sub>
+  <sub>⚡ <em>Compilando modelos que predicen enfermedades antes de que aparezcan.</em> ⚡</sub>
 </div>
