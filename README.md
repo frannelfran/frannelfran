@@ -1,4 +1,5 @@
 <div align="center">
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=24,12,30&height=280&section=header&text=Franco&fontSize=90&fontColor=ffffff&fontAlignY=40&desc=Ingeniería%20Informática%20·%20IA%20·%20HealthTech&descSize=18&descAlignY=62&descColor=ffffffaa&animation=fadeIn&stroke=c9b8ff&strokeWidth=1"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=1000&color=FF6B9D&center=true&vCenter=true&width=640&lines=🏥+IA+aplicada+a+la+Medicina;📈+Modelos+Predictivos+de+Enfermedades;🔬+HealthTech+%26+Biotech+Research;⚡+C%2B%2B+%7C+Python+%7C+TensorFlow+%7C+Keras)](https://git.io/typing-svg)
@@ -11,13 +12,9 @@
 
 </div>
 
-<br/>
+### 👤 Sobre mí
 
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/about-header.svg"/>
-</div>
-
-<br/>
+---
 
 <img align="right" width="260" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
@@ -39,19 +36,51 @@
 
 <br clear="right"/>
 
-<br/>
+### 🛠️ Tecnologías
+
+---
+
+**Lenguajes**
+
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+**IA & Data Science**
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
+**Entorno & Herramientas**
+
+![VS Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+
+### 📌 Proyectos Destacados
+
+---
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/tech-header.svg"/>
+
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/projects-card.svg"/>
+
+[![Redes-Neuronales-en-Keras](https://img.shields.io/badge/→%20Redes%20Neuronales%20en%20Keras-ff6b9d?style=flat-square&logo=keras&logoColor=white)](https://github.com/frannelfran/Redes-Neuronales-en-Keras)
+[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=cplusplus&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
+[![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/APv)
+[![VRPT-SWTS](https://img.shields.io/badge/→%20VRPT--SWTS-00e5ff?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/VRPT-SWTS)
+
 </div>
 
-<br/>
+### 🏆 Logros
 
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/achievements-header.svg"/>
-</div>
-
-<br/>
+---
 
 <div align="center">
 
@@ -62,36 +91,15 @@
 
 </div>
 
-<br/>
+### 📫 Contacto
 
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/projects-card.svg"/>
-</div>
+---
 
-<div align="center">
-
-[![Redes-Neuronales-en-Keras](https://img.shields.io/badge/→%20Redes%20Neuronales%20en%20Keras-ff6b9d?style=flat-square&logo=keras&logoColor=white)](https://github.com/frannelfran/Redes-Neuronales-en-Keras)
-[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=cplusplus&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
-[![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/APv)
-[![VRPT-SWTS](https://img.shields.io/badge/→%20VRPT--SWTS-00e5ff?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/VRPT-SWTS)
-
-</div>
-
-<br/>
-
-<div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/contact.svg"/>
-</div>
-
-<div align="center">
+¿Tienes un proyecto interesante o quieres hablar de tecnología? ¡Escríbeme!
 
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:frannelfran@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Frannelfran)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/frannalpes_)
-
-</div>
-
-<br/>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer&animation=fadeIn"/>
 
