@@ -1,106 +1,77 @@
-<svg width="860" height="380" viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="380" fill="#0d1117" rx="16"/>
+<svg width="860" height="280" viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="280" fill="#0d1117" rx="12"/>
 
-  <!-- Header row -->
-  <rect x="0" y="0" width="860" height="52" fill="#161b22" rx="16"/>
-  <rect x="0" y="36" width="860" height="16" fill="#161b22"/>
+  <!-- FILA 1: 4 cards -->
 
-  <text x="180" y="32" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">MÉTRICA</text>
-  <text x="500" y="32" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">VALOR</text>
-  <text x="760" y="32" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">ESTADO</text>
+  <!-- Card 1: Contribuciones -->
+  <rect x="8" y="8" width="202" height="118" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="8" y="8" width="202" height="2" rx="10" fill="#ffd700" opacity="0.9"/>
+  <text x="28" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">⚡</text>
+  <text x="28" y="72" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffd700"><!-- CONTRIBUTIONS --></text>
+  <text x="28" y="90" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Contribuciones</text>
+  <text x="28" y="104" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Desde sep 2022</text>
+  <circle cx="36" cy="117" r="3" fill="#ffd700"/>
+  <text x="44" y="121" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Auto · diario</text>
 
-  <!-- Divider vertical lines -->
-  <line x1="360" y1="0" x2="360" y2="380" stroke="#21262d" stroke-width="1"/>
-  <line x1="640" y1="0" x2="640" y2="380" stroke="#21262d" stroke-width="1"/>
+  <!-- Card 2: Racha -->
+  <rect x="218" y="8" width="202" height="118" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="218" y="8" width="202" height="2" rx="10" fill="#c9b8ff" opacity="0.9"/>
+  <text x="238" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">🔥</text>
+  <text x="238" y="72" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#c9b8ff"><!-- STREAK --> días</text>
+  <text x="238" y="90" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Racha máxima</text>
+  <text x="238" y="104" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Días consecutivos</text>
+  <circle cx="246" cy="117" r="3" fill="#ffd700"/>
+  <text x="254" y="121" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Auto · diario</text>
 
-  <!-- ROW 1: Contribuciones -->
-  <rect x="0" y="52" width="860" height="48" fill="#0d1117"/>
-  <circle cx="30" cy="76" r="8" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="81" text-anchor="middle" font-size="10">⚡</text>
-  <text x="180" y="72" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Contribuciones totales</text>
-  <text x="180" y="88" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Desde septiembre 2022</text>
-  <rect x="435" y="62" width="130" height="26" rx="13" fill="#ffd700" fill-opacity="0.12" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="79" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffd700">599</text>
-  <rect x="700" y="64" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="75" r="4" fill="#ffd700"/>
-  <text x="760" y="79" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Auto · diario</text>
-  <line x1="0" y1="100" x2="860" y2="100" stroke="#21262d" stroke-width="1"/>
+  <!-- Card 3: Repos -->
+  <rect x="428" y="8" width="202" height="118" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="428" y="8" width="202" height="2" rx="10" fill="#ff6b9d" opacity="0.9"/>
+  <text x="448" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">📁</text>
+  <text x="448" y="72" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#ff6b9d">30</text>
+  <text x="448" y="90" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Repos públicos</text>
+  <text x="448" y="104" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Proyectos en GitHub</text>
+  <circle cx="456" cy="117" r="3" fill="#00e5ff"/>
+  <text x="464" y="121" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Tiempo real</text>
 
-  <!-- ROW 2: Racha máxima -->
-  <rect x="0" y="100" width="860" height="48" fill="#161b22" fill-opacity="0.4"/>
-  <circle cx="30" cy="124" r="8" fill="#c9b8ff" fill-opacity="0.15" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="129" text-anchor="middle" font-size="10">🔥</text>
-  <text x="180" y="120" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Racha máxima</text>
-  <text x="180" y="136" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Días consecutivos de actividad</text>
-  <rect x="435" y="110" width="130" height="26" rx="13" fill="#c9b8ff" fill-opacity="0.12" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="127" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#c9b8ff">8 días</text>
-  <rect x="700" y="112" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="123" r="4" fill="#ffd700"/>
-  <text x="760" y="127" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Auto · diario</text>
-  <line x1="0" y1="148" x2="860" y2="148" stroke="#21262d" stroke-width="1"/>
+  <!-- Card 4: Seguidores -->
+  <rect x="638" y="8" width="214" height="118" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="638" y="8" width="214" height="2" rx="10" fill="#c9b8ff" opacity="0.9"/>
+  <text x="658" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">👥</text>
+  <text x="658" y="72" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#c9b8ff">19</text>
+  <text x="658" y="90" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Seguidores</text>
+  <text x="658" y="104" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Comunidad GitHub</text>
+  <circle cx="666" cy="117" r="3" fill="#00e5ff"/>
+  <text x="674" y="121" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Tiempo real</text>
 
-  <!-- ROW 3: Repositorios -->
-  <rect x="0" y="148" width="860" height="48" fill="#0d1117"/>
-  <circle cx="30" cy="172" r="8" fill="#ff6b9d" fill-opacity="0.15" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="177" text-anchor="middle" font-size="10">📁</text>
-  <text x="180" y="168" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Repositorios públicos</text>
-  <text x="180" y="184" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Proyectos en GitHub</text>
-  <rect x="435" y="158" width="130" height="26" rx="13" fill="#ff6b9d" fill-opacity="0.12" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#ff6b9d">30</text>
-  <rect x="700" y="160" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="171" r="4" fill="#00e5ff"/>
-  <text x="760" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Tiempo real</text>
-  <line x1="0" y1="196" x2="860" y2="196" stroke="#21262d" stroke-width="1"/>
+  <!-- FILA 2: 3 cards -->
 
-  <!-- ROW 4: Seguidores -->
-  <rect x="0" y="196" width="860" height="48" fill="#161b22" fill-opacity="0.4"/>
-  <circle cx="30" cy="220" r="8" fill="#c9b8ff" fill-opacity="0.15" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="225" text-anchor="middle" font-size="10">👥</text>
-  <text x="180" y="216" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Seguidores</text>
-  <text x="180" y="232" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Comunidad en GitHub</text>
-  <rect x="435" y="206" width="130" height="26" rx="13" fill="#c9b8ff" fill-opacity="0.12" stroke="#c9b8ff" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="223" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#c9b8ff">19</text>
-  <rect x="700" y="208" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="219" r="4" fill="#00e5ff"/>
-  <text x="760" y="223" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Tiempo real</text>
-  <line x1="0" y1="244" x2="860" y2="244" stroke="#21262d" stroke-width="1"/>
+  <!-- Card 5: Estrellas -->
+  <rect x="8" y="142" width="274" height="130" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="8" y="142" width="274" height="2" rx="10" fill="#ffd700" opacity="0.9"/>
+  <text x="28" y="176" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">⭐</text>
+  <text x="28" y="210" font-family="'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffd700">3</text>
+  <text x="28" y="228" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Estrellas recibidas</text>
+  <text x="28" y="242" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">En repos propios</text>
+  <circle cx="36" cy="263" r="3" fill="#00e5ff"/>
+  <text x="44" y="267" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Tiempo real</text>
 
-  <!-- ROW 5: Estrellas -->
-  <rect x="0" y="244" width="860" height="48" fill="#0d1117"/>
-  <circle cx="30" cy="268" r="8" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="273" text-anchor="middle" font-size="10">⭐</text>
-  <text x="180" y="264" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Estrellas recibidas</text>
-  <text x="180" y="280" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">En repositorios propios</text>
-  <rect x="435" y="254" width="130" height="26" rx="13" fill="#ffd700" fill-opacity="0.12" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="271" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffd700">3</text>
-  <rect x="700" y="256" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="267" r="4" fill="#00e5ff"/>
-  <text x="760" y="271" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Tiempo real</text>
-  <line x1="0" y1="292" x2="860" y2="292" stroke="#21262d" stroke-width="1"/>
+  <!-- Card 6: Quickdraw -->
+  <rect x="294" y="142" width="274" height="130" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="294" y="142" width="274" height="2" rx="10" fill="#ff6b9d" opacity="0.9"/>
+  <text x="314" y="176" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">🏅</text>
+  <text x="314" y="208" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="700" fill="#ff6b9d">Obtenido ✓</text>
+  <text x="314" y="228" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Quickdraw</text>
+  <text x="314" y="242" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Logro oficial de GitHub</text>
+  <circle cx="322" cy="263" r="3" fill="#3fb950"/>
+  <text x="330" y="267" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Fijo</text>
 
-  <!-- ROW 6: Quickdraw -->
-  <rect x="0" y="292" width="860" height="48" fill="#161b22" fill-opacity="0.4"/>
-  <circle cx="30" cy="316" r="8" fill="#ff6b9d" fill-opacity="0.15" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="321" text-anchor="middle" font-size="10">🏅</text>
-  <text x="180" y="312" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Quickdraw</text>
-  <text x="180" y="328" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Logro oficial de GitHub</text>
-  <rect x="435" y="302" width="130" height="26" rx="13" fill="#ff6b9d" fill-opacity="0.12" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="319" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#ff6b9d">Obtenido ✓</text>
-  <rect x="700" y="304" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="315" r="4" fill="#3fb950"/>
-  <text x="760" y="319" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Fijo</text>
-  <line x1="0" y1="340" x2="860" y2="340" stroke="#21262d" stroke-width="1"/>
-
-  <!-- ROW 7: Universidad -->
-  <rect x="0" y="340" width="860" height="40" fill="#0d1117"/>
-  <rect x="0" y="356" width="860" height="24" rx="16" fill="#0d1117"/>
-  <circle cx="30" cy="360" r="8" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="30" y="365" text-anchor="middle" font-size="10">🎓</text>
-  <text x="180" y="356" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Universidad</text>
-  <text x="180" y="372" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8b949e">Ingeniería Informática · ULL 🇮🇨</text>
-  <rect x="435" y="348" width="130" height="26" rx="13" fill="#ffd700" fill-opacity="0.12" stroke="#ffd700" stroke-width="1" stroke-opacity="0.5"/>
-  <text x="500" y="365" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffd700">En curso ✓</text>
-  <rect x="700" y="350" width="120" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <circle cx="716" cy="361" r="4" fill="#3fb950"/>
-  <text x="760" y="365" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e">Fijo</text>
+  <!-- Card 7: Universidad -->
+  <rect x="580" y="142" width="272" height="130" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <rect x="580" y="142" width="272" height="2" rx="10" fill="#ffd700" opacity="0.9"/>
+  <text x="600" y="176" font-family="'Segoe UI', system-ui, sans-serif" font-size="20">🎓</text>
+  <text x="600" y="208" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffd700">En curso ✓</text>
+  <text x="600" y="228" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Universidad · ULL 🇮🇨</text>
+  <text x="600" y="242" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Ingeniería Informática</text>
+  <circle cx="608" cy="263" r="3" fill="#3fb950"/>
+  <text x="616" y="267" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#484f58">Fijo</text>
 </svg>
