@@ -13,9 +13,7 @@
 
 ---
 
-### 👤 Sobre mí
-
-<img align="right" width="280" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
+<img align="right" width="260" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
 🎓 &nbsp;Estudiante de **Ingeniería Informática** en la Universidad de La Laguna 🇮🇨
 
@@ -37,25 +35,19 @@
 
 ---
 
-### 🛠️ Arsenal Tecnológico
-
-**Lenguajes**
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/frannelfran/frannelfran/main/assets/tech-header.svg"/>
+</div>
 
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-
-**IA & Data Science**
-
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-
-**Entorno & Herramientas**
-
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
@@ -63,21 +55,6 @@
 ![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
 
 ---
-
-### 🏆 Logros
-
-<div align="center">
-
-![MultiLanguage](https://img.shields.io/badge/Multi--Language-C++%20·%20Python%20·%20Java%20·%20TS-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![AI Dev](https://img.shields.io/badge/IA%20Developer-TensorFlow%20·%20Keras-c9b8ff?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=161b22)
-![Student](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-![HealthTech](https://img.shields.io/badge/Predictive%20IA-Modelos%20de%20Enfermedad-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
-
-</div>
-
----
-
-### 📌 Proyectos Destacados
 
 <div align="center">
 
@@ -88,14 +65,13 @@
 <div align="center">
 
 [![Redes-Neuronales-en-Keras](https://img.shields.io/badge/→%20Redes%20Neuronales%20en%20Keras-ff6b9d?style=flat-square&logo=keras&logoColor=white)](https://github.com/frannelfran/Redes-Neuronales-en-Keras)
-[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
-[![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=typescript&logoColor=black)](https://github.com/frannelfran/APv)
+[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=cplusplus&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
+[![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/APv)
+[![VRPT-SWTS](https://img.shields.io/badge/→%20VRPT--SWTS-00e5ff?style=flat-square&logo=cplusplus&logoColor=black)](https://github.com/frannelfran/VRPT-SWTS)
 
 </div>
 
 ---
-
-### 📫 Contacto
 
 <div align="center">
 
