@@ -1,7 +1,7 @@
 <div align="center">
 <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=24,12,30&height=280&section=header&text=Franco&fontSize=90&fontColor=ffffff&fontAlignY=40&desc=Ingeniería%20Informática%20·%20IA%20·%20HealthTech&descSize=18&descAlignY=62&descColor=ffffffaa&animation=fadeIn&stroke=c9b8ff&strokeWidth=1"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=1000&color=FF6B9D&center=true&vCenter=true&width=640&lines=🏥+IA+aplicada+a+la+Medicina;🧠+Machine+Learning+%26+Deep+Learning;🔬+HealthTech+%26+Biotech+Research;⚡+Construyendo+el+futuro+de+la+salud)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=1000&color=FF6B9D&center=true&vCenter=true&width=640&lines=🏥+IA+aplicada+a+la+Medicina;📈+Modelos+Predictivos+de+Enfermedades;🔬+HealthTech+%26+Biotech+Research;⚡+C%2B%2B+%7C+Python+%7C+TensorFlow+%7C+Keras)](https://git.io/typing-svg)
 
 <br/>
 
@@ -13,19 +13,27 @@
 
 ---
 
-### 💬 `whoami`
+### 👤 Sobre mí
 
-```js
-const franco = {
-  universidad : "Universidad de La Laguna 🇮🇨",
-  rol         : "Estudiante · Desarrollador · Investigador",
-  mision      : "Aplicar IA para transformar la Medicina 🏥",
-  aprendiendo : ["Machine Learning", "Deep Learning", "Computer Vision"],
-  stack       : ["Python", "C++", "Java", "TypeScript", "Keras"],
-  busco       : "Investigación universitaria · Startups HealthTech",
-  fun_fact    : "Programo redes neuronales en mis ratos libres ⚡"
-}
-```
+<img align="right" width="280" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
+
+🎓 &nbsp;Estudiante de **Ingeniería Informática** en la Universidad de La Laguna 🇮🇨
+
+📈 &nbsp;Mi misión: entrenar modelos capaces de **predecir enfermedades** antes de que el paciente lo sepa
+
+⚡ &nbsp;Programo principalmente en **C++** — velocidad para cuando los datos no esperan
+
+🧠 &nbsp;Explorando **Deep Learning**, **Computer Vision** y estadística médica aplicada
+
+🤝 &nbsp;Busco unirme a proyectos de **investigación universitaria**, HealthTech o Biotech
+
+🎮 &nbsp;Fuera del código: videojuegos, electrónica y entender cómo funciona el cuerpo humano
+
+<br/>
+
+> *"El mejor modelo no es el más complejo — es el que llega al paciente a tiempo."*
+
+<br clear="right"/>
 
 ---
 
@@ -33,8 +41,8 @@ const franco = {
 
 **Lenguajes**
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
@@ -60,10 +68,10 @@ const franco = {
 
 <div align="center">
 
-![MultiLanguage](https://img.shields.io/badge/Multi--Language-Python%20·%20C++%20·%20Java%20·%20TS-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![MultiLanguage](https://img.shields.io/badge/Multi--Language-C++%20·%20Python%20·%20Java%20·%20TS-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 ![AI Dev](https://img.shields.io/badge/IA%20Developer-TensorFlow%20·%20Keras-c9b8ff?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=161b22)
-![Student](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=graduation-cap&logoColor=white&labelColor=161b22)
-![HealthTech](https://img.shields.io/badge/HealthTech-IA%20en%20Medicina-00e5ff?style=for-the-badge&logo=heart&logoColor=white&labelColor=161b22)
+![Student](https://img.shields.io/badge/ULL-Ingeniería%20Informática-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
+![HealthTech](https://img.shields.io/badge/Predictive%20IA-Modelos%20de%20Enfermedad-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)
 
 </div>
 
@@ -80,7 +88,7 @@ const franco = {
 <div align="center">
 
 [![Redes-Neuronales-en-Keras](https://img.shields.io/badge/→%20Redes%20Neuronales%20en%20Keras-ff6b9d?style=flat-square&logo=keras&logoColor=white)](https://github.com/frannelfran/Redes-Neuronales-en-Keras)
-[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=java&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
+[![Maquina-de-Turing](https://img.shields.io/badge/→%20Maquina%20de%20Turing-c9b8ff?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/frannelfran/Maquina-de-Turing)
 [![APv](https://img.shields.io/badge/→%20APv-ffd700?style=flat-square&logo=typescript&logoColor=black)](https://github.com/frannelfran/APv)
 
 </div>
@@ -91,20 +99,13 @@ const franco = {
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=ff6b9d&icon_color=c9b8ff&text_color=8b949e&ring_color=ff6b9d"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=ff6b9d&text_color=8b949e&langs_count=8"/>
+<img width="98%" src="https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=0d1117&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"/>
 
 </div>
 
 <div align="center">
 
-<img width="70%" src="https://streak-stats.demolab.com/?user=frannelfran&theme=radical&hide_border=true&background=0d1117&ring=ff6b9d&fire=ffd700&currStreakLabel=c9b8ff&sideLabels=8b949e&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"/>
-
-</div>
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9b8ff&line=ff6b9d&point=ffd700&area=true&area_color=ff6b9d20"/>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9b8ff&line=ff6b9d&point=ffd700&area=true&area_color=ff6b9d20"/>
 
 </div>
 
@@ -125,5 +126,5 @@ const franco = {
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer&animation=fadeIn"/>
 
 <div align="center">
-  <sub>⚡ <i>Construyendo el puente entre la IA y la Medicina, una línea de código a la vez.</i> ⚡</sub>
+  <sub>⚡ <i>Compilando modelos que predicen enfermedades antes de que aparezcan.</i> ⚡</sub>
 </div>
