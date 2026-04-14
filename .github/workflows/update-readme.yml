@@ -19,7 +19,7 @@ jobs:
         id: stats
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.UPDATEREADME }}
           script: |
             const result = await github.graphql(`
               query {
