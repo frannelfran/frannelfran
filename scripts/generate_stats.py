@@ -133,43 +133,69 @@ def tier(v, th):
     return sum(1 for t in th if v >= t)
 
 
+ICONS = {
+    "commit": '<circle cx="12" cy="12" r="4"/><path d="M2 12h6M16 12h6"/>',
+    "pr": '<circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v7M18 15.5V10a4 4 0 0 0-4-4h-3M13 3l-3 3 3 3"/>',
+    "star": '<polygon points="12,3 14.8,9 21,9.7 16.3,14 17.7,20.5 12,17.2 6.3,20.5 7.7,14 3,9.7 9.2,9"/>',
+    "users": '<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c3 0 5 2 5 5"/>',
+    "book": '<path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M9 8h6M9 12h6"/>',
+    "issue": '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/>',
+    "cal": '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/>',
+}
+
+
 def build_trophies(u):
     import datetime
+    import math
     cc = u["contributionsCollection"]
     stars = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
-    years = max(0, (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(u["createdAt"].replace("Z", "+00:00"))).days // 365)
+    now = datetime.datetime.now(datetime.timezone.utc)
+    years = max(0, (now - datetime.datetime.fromisoformat(u["createdAt"].replace("Z", "+00:00"))).days // 365)
     items = [
-        ("Commits", cc["totalCommitContributions"], [1, 50, 200, 500, 1000]),
-        ("Pull requests", cc["totalPullRequestContributions"], [1, 10, 30, 100, 300]),
-        ("Estrellas", stars, [1, 5, 20, 50, 200]),
-        ("Seguidores", u["followers"]["totalCount"], [1, 10, 30, 100, 300]),
-        ("Repositorios", u["repositories"]["totalCount"], [1, 5, 15, 30, 60]),
-        ("Issues", cc["totalIssueContributions"], [1, 5, 15, 40, 100]),
-        ("Años en GitHub", years, [1, 2, 3, 5, 8]),
+        ("Commits", cc["totalCommitContributions"], [1, 50, 200, 500, 1000], "commit", "#4C8FE0"),
+        ("Pull requests", cc["totalPullRequestContributions"], [1, 10, 30, 100, 300], "pr", "#8B7FD8"),
+        ("Estrellas", stars, [1, 5, 20, 50, 200], "star", "#E0B341"),
+        ("Seguidores", u["followers"]["totalCount"], [1, 10, 30, 100, 300], "users", "#34B3A0"),
+        ("Repositorios", u["repositories"]["totalCount"], [1, 5, 15, 30, 60], "book", "#5DA9C9"),
+        ("Issues", cc["totalIssueContributions"], [1, 5, 15, 40, 100], "issue", "#D9825B"),
+        ("Años en GitHub", years, [1, 2, 3, 5, 8], "cal", "#9AA9C0"),
     ]
-    W, H, cw, gap = 900, 190, 116, 8
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Trofeos de GitHub">',
-         "<defs><style>", font_css(),
+    W, H, cw, gap = 900, 210, 116, 8
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Trofeos de GitHub">', "<defs><style>", font_css(),
          """text{font-family:'JB','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;text-anchor:middle}
-.v{fill:#fff;font-size:20px;font-weight:700}.k{fill:#8B9BB4;font-size:11px}.tl{font-size:17px;font-weight:700}
+.v{fill:#fff;font-size:20px;font-weight:700}.k{fill:#8B9BB4;font-size:11px}.tl{font-size:13px;font-weight:700}
 .card{opacity:0;transform:translateY(10px);animation:up .7s ease forwards}
-@keyframes up{to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.card{animation:none;opacity:1;transform:none}}
-</style></defs>""",
-         f"<rect width='{W}' height='{H}' rx='10' fill='#0D1117' stroke='#1F3350'/>"]
-    for i, (name, val, th) in enumerate(items):
+.hex{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.3s ease .3s forwards}
+.pg{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:gr 1.1s cubic-bezier(.22,.9,.3,1) .8s forwards}
+@keyframes up{to{opacity:1;transform:none}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes gr{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.card{animation:none;opacity:1;transform:none}.hex{animation:none;stroke-dashoffset:0}.pg{animation:none;transform:none}}
+</style>"""]
+    for i, (_, _, _, _, c) in enumerate(items):
+        o.append(f"<linearGradient id='g{i}' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='{c}' stop-opacity='.40'/><stop offset='1' stop-color='#0D1117' stop-opacity='.95'/></linearGradient>")
+    o.append("</defs>")
+    o.append(f"<rect width='{W}' height='{H}' rx='10' fill='#0D1117' stroke='#1F3350'/>")
+    for i, (name, val, th, icon, col) in enumerate(items):
         x = 20 + i * (cw + gap)
+        cx, cy, r = x + cw / 2, 68, 34
         t = tier(val, th)
-        col = TCOL[t]
-        cx = x + cw / 2
-        o.append(f"<g class='card' style='animation-delay:{.12*i:.2f}s'>"
-                 f"<rect x='{x}' y='20' width='{cw}' height='150' rx='8' fill='#0B1F3A' stroke='#1F3350'/>"
-                 f"<path d='M{cx-14} 34 L{cx-20} 66 L{cx} 58 L{cx+20} 66 L{cx+14} 34 Z' fill='{col}' opacity='.35'/>"
-                 f"<circle cx='{cx}' cy='56' r='26' fill='#0D1117' stroke='{col}' stroke-width='3'/>"
-                 f"<text x='{cx}' y='63' class='tl' fill='{col}'>{TIERS[t]}</text>"
-                 f"<text x='{cx}' y='116' class='v'>{val:,}</text>".replace(",", ".") +
-                 f"<text x='{cx}' y='138' class='k'>{escape(name)}</text>"
-                 f"<rect x='{cx-20}' y='150' width='40' height='3' rx='1.5' fill='{col}'/></g>")
+        tc = TCOL[t]
+        pts = " ".join(f"{cx + r * math.cos(math.radians(-90 + 60 * k)):.1f},{cy + r * math.sin(math.radians(-90 + 60 * k)):.1f}" for k in range(6))
+        frac = 1.0 if t >= len(th) else (val - (th[t - 1] if t else 0)) / (th[t] - (th[t - 1] if t else 0))
+        frac = max(0.04, min(1.0, frac))
+        o.append(
+            f"<g class='card' style='animation-delay:{.12*i:.2f}s'>"
+            f"<rect x='{x}' y='18' width='{cw}' height='176' rx='9' fill='#0B1F3A' stroke='#1F3350'/>"
+            f"<rect x='{x}' y='18' width='{cw}' height='3' rx='1.5' fill='{col}' opacity='.8'/>"
+            f"<polygon points='{pts}' fill='url(#g{i})' stroke='#16283F' stroke-width='2'/>"
+            f"<polygon class='hex' pathLength='1' points='{pts}' fill='none' stroke='{col}' stroke-width='2.2' stroke-linejoin='round'/>"
+            f"<g transform='translate({cx-13},{cy-13}) scale(1.08)' fill='none' stroke='#E6EEF9' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' color='#E6EEF9'>{ICONS[icon]}</g>"
+            f"<rect x='{cx-16}' y='96' width='32' height='18' rx='9' fill='#0D1117' stroke='{tc}' stroke-width='1.5'/>"
+            f"<text x='{cx}' y='109' class='tl' fill='{tc}'>{TIERS[t]}</text>"
+            + f"<text x='{cx}' y='141' class='v'>{val:,}</text>".replace(",", ".")
+            + f"<text x='{cx}' y='159' class='k'>{escape(name)}</text>"
+            f"<rect x='{cx-38}' y='172' width='76' height='4' rx='2' fill='#16283F'/>"
+            f"<rect class='pg' x='{cx-38}' y='172' width='{76*frac:.1f}' height='4' rx='2' fill='{col}'/></g>"
+        )
     o.append("</svg>")
     return "\n".join(o)
 
