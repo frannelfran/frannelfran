@@ -47,7 +47,9 @@
 
 <!--ACHIEVEMENTS:START-->
 <div align="center">
-<sub>Sección generada automáticamente desde el perfil de GitHub. Se rellena tras ejecutar el workflow «Actualizar logros de GitHub» (pestaña Actions).</sub>
+<table>
+<tr><td align="center" width="130"><a href="https://github.com/frannelfran?tab=achievements"><img src="https://github.githubassets.com/assets/quickdraw-default--light-medium-5450fadcbe37.png" width="80" height="80" alt="Quickdraw" title="Quickdraw"/></a><br/><sub><b>Quickdraw</b></sub></td></tr>
+</table>
 </div>
 <!--ACHIEVEMENTS:END-->
 
