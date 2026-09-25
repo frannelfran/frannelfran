@@ -46,24 +46,13 @@ Desarrollo software de forma profesional y trabajo con C++ y Python, combinando 
 ## Estadísticas de GitHub
 
 <div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=frannelfran&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D6E8&rank_icon=github&count_private=true&custom_title=Estad%C3%ADsticas"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=frannelfran&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D6E8&langs_count=6&custom_title=Lenguajes"/>
-
-<img src="https://streak-stats.demolab.com?user=frannelfran&hide_border=true&background=0D1117&ring=58A6FF&fire=1F6FEB&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=58A6FF&sideLabels=C9D6E8&dates=8B9BB4&locale=es"/>
-
+<img width="100%" src="assets/actividad.svg" alt="Estadísticas y actividad en GitHub"/>
 </div>
 
 ## Trofeos de GitHub
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=frannelfran&theme=nord&no-frame=true&no-bg=true&margin-w=12&margin-h=12&column=7&row=1&title=Commits,Followers,Stars,PullRequest,Repositories,Issues,Experience"/>
-</div>
-
-## Actividad en GitHub
-
-<div align="center">
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=frannelfran&bg_color=0D1117&color=58A6FF&line=1F6FEB&point=FFFFFF&area=true&area_color=1F4E79&hide_border=true&custom_title=Contribuciones"/>
+<img width="100%" src="assets/trofeos.svg" alt="Trofeos de GitHub"/>
 </div>
 
 ## Contacto

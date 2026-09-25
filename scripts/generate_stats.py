@@ -11,12 +11,13 @@ from html import escape
 USER = os.environ.get("GH_USER", "frannelfran")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
 OUT = os.environ.get("OUT_PATH", "assets/actividad.svg")
+OUT_TROPHIES = os.environ.get("OUT_TROPHIES", "assets/trofeos.svg")
 FONTS = {400: "assets/jetbrains-mono-latin-400-normal.woff2", 700: "assets/jetbrains-mono-latin-700-normal.woff2"}
 MOCK = os.environ.get("MOCK_JSON")
 
 QUERY = """
 query($login:String!){ user(login:$login){
-  followers{totalCount}
+  createdAt followers{totalCount}
   contributionsCollection{
     totalCommitContributions totalPullRequestContributions totalIssueContributions
     contributionCalendar{ totalContributions weeks{ contributionDays{ contributionCount date } } }
@@ -124,9 +125,60 @@ text{font-family:'JB','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace}
     return "\n".join(o)
 
 
+TIERS = ["-", "C", "B", "A", "S", "SS"]
+TCOL = ["#2A3D57", "#3B6EA5", "#4C8FE0", "#79B8FF", "#B6D4FF", "#E3B341"]
+
+
+def tier(v, th):
+    return sum(1 for t in th if v >= t)
+
+
+def build_trophies(u):
+    import datetime
+    cc = u["contributionsCollection"]
+    stars = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
+    years = max(0, (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(u["createdAt"].replace("Z", "+00:00"))).days // 365)
+    items = [
+        ("Commits", cc["totalCommitContributions"], [1, 50, 200, 500, 1000]),
+        ("Pull requests", cc["totalPullRequestContributions"], [1, 10, 30, 100, 300]),
+        ("Estrellas", stars, [1, 5, 20, 50, 200]),
+        ("Seguidores", u["followers"]["totalCount"], [1, 10, 30, 100, 300]),
+        ("Repositorios", u["repositories"]["totalCount"], [1, 5, 15, 30, 60]),
+        ("Issues", cc["totalIssueContributions"], [1, 5, 15, 40, 100]),
+        ("Años en GitHub", years, [1, 2, 3, 5, 8]),
+    ]
+    W, H, cw, gap = 900, 190, 116, 8
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Trofeos de GitHub">',
+         "<defs><style>", font_css(),
+         """text{font-family:'JB','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;text-anchor:middle}
+.v{fill:#fff;font-size:20px;font-weight:700}.k{fill:#8B9BB4;font-size:11px}.tl{font-size:17px;font-weight:700}
+.card{opacity:0;transform:translateY(10px);animation:up .7s ease forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.card{animation:none;opacity:1;transform:none}}
+</style></defs>""",
+         f"<rect width='{W}' height='{H}' rx='10' fill='#0D1117' stroke='#1F3350'/>"]
+    for i, (name, val, th) in enumerate(items):
+        x = 20 + i * (cw + gap)
+        t = tier(val, th)
+        col = TCOL[t]
+        cx = x + cw / 2
+        o.append(f"<g class='card' style='animation-delay:{.12*i:.2f}s'>"
+                 f"<rect x='{x}' y='20' width='{cw}' height='150' rx='8' fill='#0B1F3A' stroke='#1F3350'/>"
+                 f"<path d='M{cx-14} 34 L{cx-20} 66 L{cx} 58 L{cx+20} 66 L{cx+14} 34 Z' fill='{col}' opacity='.35'/>"
+                 f"<circle cx='{cx}' cy='56' r='26' fill='#0D1117' stroke='{col}' stroke-width='3'/>"
+                 f"<text x='{cx}' y='63' class='tl' fill='{col}'>{TIERS[t]}</text>"
+                 f"<text x='{cx}' y='116' class='v'>{val:,}</text>".replace(",", ".") +
+                 f"<text x='{cx}' y='138' class='k'>{escape(name)}</text>"
+                 f"<rect x='{cx-20}' y='150' width='40' height='3' rx='1.5' fill='{col}'/></g>")
+    o.append("</svg>")
+    return "\n".join(o)
+
+
 def main():
     try:
-        svg = build(fetch())
+        user = fetch()
+        svg = build(user)
+        tro = build_trophies(user)
     except Exception as exc:  # noqa: BLE001
         print(f"Error: {exc}", file=sys.stderr)
         return 1
@@ -135,6 +187,10 @@ def main():
     if svg != old:
         open(OUT, "w", encoding="utf-8").write(svg)
         print("actividad.svg actualizado")
+    old = open(OUT_TROPHIES, encoding="utf-8").read() if os.path.exists(OUT_TROPHIES) else ""
+    if tro != old:
+        open(OUT_TROPHIES, "w", encoding="utf-8").write(tro)
+        print("trofeos.svg actualizado")
     return 0
 
 
