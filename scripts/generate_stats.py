@@ -60,10 +60,42 @@ def level(n, mx):
     return "#1F4E79" if r < .25 else "#2F6DB5" if r < .5 else "#4C8FE0" if r < .75 else "#79B8FF"
 
 
+def streaks(days):
+    days = sorted(days, key=lambda d: d["date"])
+    best = run = 0
+    for d in days:
+        run = run + 1 if d["contributionCount"] > 0 else 0
+        best = max(best, run)
+    cur = 0
+    rev = list(reversed(days))
+    if rev and rev[0]["contributionCount"] == 0:
+        rev = rev[1:]  # hoy aún sin actividad no rompe la racha
+    for d in rev:
+        if d["contributionCount"] > 0:
+            cur += 1
+        else:
+            break
+    return cur, best
+
+
+def smooth(pts):
+    d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"
+    for i in range(1, len(pts)):
+        x0, y0 = pts[i - 1]
+        x1, y1 = pts[i]
+        mx = (x0 + x1) / 2
+        d += f" C{mx:.1f},{y0:.1f} {mx:.1f},{y1:.1f} {x1:.1f},{y1:.1f}"
+    return d
+
+
 def build(u):
+    import math
     cc = u["contributionsCollection"]
     cal = cc["contributionCalendar"]
-    stars = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
+    days = [d for w in cal["weeks"] for d in w["contributionDays"]]
+    cur, best = streaks(days)
+    weeks = cal["weeks"][-52:]
+    totals = [sum(d["contributionCount"] for d in w["contributionDays"]) for w in weeks]
     langs = defaultdict(lambda: [0, "#8B9BB4"])
     for r in u["repositories"]["nodes"]:
         for e in r["languages"]["edges"]:
@@ -72,55 +104,72 @@ def build(u):
     total = sum(v[0] for v in langs.values()) or 1
     top = sorted(langs.items(), key=lambda kv: -kv[1][0])[:5]
 
-    tiles = [
-        (cal["totalContributions"], "contribuciones · último año"),
-        (cc["totalCommitContributions"], "commits"),
-        (cc["totalPullRequestContributions"], "pull requests"),
-        (stars, "estrellas recibidas"),
+    kpis = [
+        (f"{cal['totalContributions']:,}".replace(",", "."), "contribuciones · año", "#4C8FE0"),
+        (f"{cc['totalCommitContributions']:,}".replace(",", "."), "commits", "#5DA9C9"),
+        (f"{cc['totalPullRequestContributions']:,}".replace(",", "."), "pull requests", "#8B7FD8"),
+        (f"{cur} d", "racha actual", "#34B3A0"),
+        (f"{best} d", "mejor racha", "#E0B341"),
     ]
-    W, H = 900, 412
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Actividad de {escape(USER)} en GitHub">']
-    o.append("<defs><linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#0B1F3A'/><stop offset='1' stop-color='#0D1117'/></linearGradient>"
-             "<clipPath id='lc'><rect x='40' y='196' width='820' height='14' rx='7'/></clipPath><style>")
-    o.append(font_css())
-    o.append("""
-text{font-family:'JB','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace}
-.t{fill:#fff;font-size:18px;font-weight:700}.s{fill:#8B9BB4;font-size:12px}.n{fill:#79B8FF;font-size:30px;font-weight:700}
-.l{fill:#C9D6E8;font-size:12px}
+    W, H = 900, 430
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Actividad de {escape(USER)} en GitHub">',
+         "<defs><linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#0B1F3A'/><stop offset='1' stop-color='#0D1117'/></linearGradient>"
+         "<linearGradient id='ar' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#4C8FE0' stop-opacity='.45'/><stop offset='1' stop-color='#4C8FE0' stop-opacity='0'/></linearGradient><style>", font_css(),
+         """text{font-family:'JB','JetBrains Mono',ui-monospace,Menlo,Consolas,monospace}
+.t{fill:#fff;font-size:18px;font-weight:700}.s{fill:#8B9BB4;font-size:12px}.pt{fill:#C9D6E8;font-size:12px;font-weight:700}
+.kv{font-size:22px;font-weight:700}.kl{fill:#8B9BB4;font-size:10.5px}.l{fill:#C9D6E8;font-size:11.5px}.ax{fill:#5F7391;font-size:10px}
 .up{opacity:0;transform:translateY(8px);animation:up .7s ease forwards}
-.seg{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:gr 1.2s cubic-bezier(.22,.9,.3,1) .5s forwards}
-.c{opacity:0;animation:up .5s ease forwards}
-@keyframes up{to{opacity:1;transform:none}}@keyframes gr{to{transform:scaleX(1)}}
-@media (prefers-reduced-motion:reduce){.up,.c{animation:none;opacity:1;transform:none}.seg{animation:none;transform:none}}
-""")
-    o.append("</style></defs>")
+.ln{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2s ease .5s forwards}
+.fadein{opacity:0;animation:fi 1.2s ease 1.2s forwards}
+.seg{opacity:0;animation:fi .8s ease forwards}
+@keyframes up{to{opacity:1;transform:none}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes fi{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.up,.fadein,.seg{animation:none;opacity:1;transform:none}.ln{animation:none;stroke-dashoffset:0}}
+</style></defs>"""]
     o.append(f"<rect width='{W}' height='{H}' rx='10' fill='url(#bg)' stroke='#1F3350'/>")
     o.append(f"<text x='40' y='44' class='t'>Actividad en GitHub</text><text x='40' y='64' class='s'>@{escape(USER)} · {u['repositories']['totalCount']} repositorios · {u['followers']['totalCount']} seguidores</text>")
-    # tiles
-    for i, (v, lab) in enumerate(tiles):
-        x = 40 + i * 205
-        o.append(f"<g class='up' style='animation-delay:{.1*i:.1f}s'><text x='{x}' y='112' class='n'>{v:,}</text><text x='{x}' y='132' class='s'>{lab}</text></g>".replace(",", "."))
-    # languages
-    o.append("<text x='40' y='182' class='l'>Lenguajes</text>")
-    o.append("<g clip-path='url(#lc)'>")
-    x = 40.0
-    for name, (sz, col) in top:
-        w = 820 * sz / sum(v[0] for _, v in top)
-        o.append(f"<rect class='seg' x='{x:.1f}' y='196' width='{w:.1f}' height='14' fill='{col}'/>")
-        x += w
-    o.append("</g>")
-    x = 40
-    for name, (sz, col) in top:
-        pct = 100 * sz / total
-        o.append(f"<g class='up' style='animation-delay:.9s'><circle cx='{x+5}' cy='230' r='5' fill='{col}'/><text x='{x+16}' y='234' class='l'>{escape(name)} {pct:.1f}%</text></g>")
-        x += 170
-    # heatmap (últimas 26 semanas)
-    weeks = cal["weeks"][-26:]
-    mx = max([d["contributionCount"] for w in weeks for d in w["contributionDays"]] + [1])
-    o.append("<text x='40' y='274' class='l'>Contribuciones · últimas 26 semanas</text>")
-    for wi, w in enumerate(weeks):
-        for di, d in enumerate(w["contributionDays"]):
-            o.append(f"<rect class='c' style='animation-delay:{1.0+wi*.03:.2f}s' x='{40+wi*31.5:.1f}' y='{288+di*15}' width='26' height='11' rx='3' fill='{level(d['contributionCount'], mx)}'><title>{d['date']}: {d['contributionCount']}</title></rect>")
+    # KPIs
+    kw, kg = 156, 10
+    for i, (v, lab, c) in enumerate(kpis):
+        x = 40 + i * (kw + kg)
+        o.append(f"<g class='up' style='animation-delay:{.1*i:.1f}s'><rect x='{x}' y='84' width='{kw}' height='62' rx='8' fill='#0B1F3A' stroke='#1F3350'/>"
+                 f"<rect x='{x}' y='84' width='3' height='62' rx='1.5' fill='{c}'/>"
+                 f"<text x='{x+16}' y='114' class='kv' fill='{c}'>{v}</text><text x='{x+16}' y='134' class='kl'>{lab}</text></g>")
+    # panel izquierdo: área semanal
+    px, py, pw, ph = 40, 164, 540, 244
+    o.append(f"<g class='up' style='animation-delay:.5s'><rect x='{px}' y='{py}' width='{pw}' height='{ph}' rx='8' fill='#0B1F3A' stroke='#1F3350'/>"
+             f"<text x='{px+16}' y='{py+24}' class='pt'>Contribuciones por semana</text></g>")
+    cx0, cx1, cy0, cy1 = px + 44, px + pw - 18, py + 48, py + ph - 34
+    mx = max(totals + [1])
+    top_v = math.ceil(mx / 5) * 5 or 5
+    for k in range(4):
+        gy = cy1 - (cy1 - cy0) * k / 3
+        o.append(f"<line x1='{cx0}' y1='{gy:.1f}' x2='{cx1}' y2='{gy:.1f}' stroke='#1F3350' stroke-dasharray='3 4'/><text x='{cx0-8}' y='{gy+3:.1f}' text-anchor='end' class='ax'>{round(top_v*k/3)}</text>")
+    pts = [(cx0 + (cx1 - cx0) * i / max(1, len(totals) - 1), cy1 - (cy1 - cy0) * v / top_v) for i, v in enumerate(totals)]
+    line = smooth(pts)
+    o.append(f"<path class='fadein' d='{line} L{pts[-1][0]:.1f},{cy1} L{pts[0][0]:.1f},{cy1} Z' fill='url(#ar)'/>")
+    o.append(f"<path class='ln' pathLength='1' d='{line}' fill='none' stroke='#79B8FF' stroke-width='2.2' stroke-linecap='round'/>")
+    im = totals.index(mx)
+    o.append(f"<g class='fadein'><circle cx='{pts[im][0]:.1f}' cy='{pts[im][1]:.1f}' r='4.5' fill='#0D1117' stroke='#E0B341' stroke-width='2'/>"
+             f"<text x='{min(max(pts[im][0], cx0+30), cx1-30):.1f}' y='{pts[im][1]-12:.1f}' text-anchor='middle' class='pt' fill='#E0B341' style='fill:#E0B341'>{mx}</text></g>")
+    for idx in (0, len(weeks) // 2, len(weeks) - 1):
+        o.append(f"<text x='{pts[idx][0]:.1f}' y='{cy1+20}' text-anchor='{'start' if idx == 0 else 'end' if idx == len(weeks)-1 else 'middle'}' class='ax'>{weeks[idx]['contributionDays'][0]['date'][:7]}</text>")
+    # panel derecho: donut
+    qx, qw = 600, 260
+    o.append(f"<g class='up' style='animation-delay:.6s'><rect x='{qx}' y='{py}' width='{qw}' height='{ph}' rx='8' fill='#0B1F3A' stroke='#1F3350'/>"
+             f"<text x='{qx+16}' y='{py+24}' class='pt'>Lenguajes</text></g>")
+    dcx, dcy, r = qx + 66, py + 128, 44
+    circ = 2 * math.pi * r
+    stot = sum(v[0] for _, v in top)
+    off = 0.0
+    for i, (name, (sz, col)) in enumerate(top):
+        seg = circ * sz / stot
+        o.append(f"<circle class='seg' style='animation-delay:{.8+.15*i:.2f}s' cx='{dcx}' cy='{dcy}' r='{r}' fill='none' stroke='{col}' stroke-width='14' stroke-dasharray='{max(seg-2,0.5):.1f} {circ-max(seg-2,0.5):.1f}' stroke-dashoffset='{-off:.1f}' transform='rotate(-90 {dcx} {dcy})'/>")
+        off += seg
+    o.append(f"<text x='{dcx}' y='{dcy+5}' text-anchor='middle' class='pt'>{len(langs)}</text><text x='{dcx}' y='{dcy+19}' text-anchor='middle' class='ax'>lenguajes</text>")
+    for i, (name, (sz, col)) in enumerate(top):
+        ly = py + 76 + i * 30
+        o.append(f"<g class='up' style='animation-delay:{1+.1*i:.1f}s'><circle cx='{qx+132}' cy='{ly}' r='4.5' fill='{col}'/>"
+                 f"<text x='{qx+144}' y='{ly-2}' class='l'>{escape(name[:16])}</text><text x='{qx+144}' y='{ly+11}' class='ax'>{100*sz/total:.1f}%</text></g>")
     o.append("</svg>")
     return "\n".join(o)
 
